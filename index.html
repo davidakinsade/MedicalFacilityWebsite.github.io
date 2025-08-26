@@ -16,122 +16,59 @@
 
 <body class="w3-light-grey">
 
+    <div id="scrollProgressBar"></div>
+
+
   <!-- Scrolling News Bar -->
   <header class="scrolling-header">
-    <span>Fionn Medical Centre — Your Health, Our Priority</span>
+    <span>Fionn Medical Centre — Your Health, Our Priority.</span>
   </header>
 
-  <!-- Navbar Section -->
   <header class="navbar">
     <div class="navbar-container">
-      <!-- Logo -->
+
       <a href="#" class="logo">
-        <img src="images/fionnlogo.jpg" alt="Fionn Logo" />
+      <img src="images/fionnlogonobgwhite.png" alt="Fionn Logo" />
       </a>
+
+    <!-- ✅ Mobile Menu Button -->
+    <button class="menu-toggle" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
   
-      <!-- Nav Links -->
-      <nav class="nav-links">
-        <a href="index.html">HOME</a>
-        <a href="team.html">About Us</a>
-        <a href="#services">Services</a>
-        <a href="policy.html">Our Policy</a>
-        <a href="#contact">Contact</a>
-      </nav>
-  
-      <!-- Right-side Icons -->
-      <div class="nav-icons">
-        <button class="search-btn">&#128269;</button>
-        <a href="#demo" class="demo-btn">Book a demo</a>
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="team.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="policy.html">Our Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-nav">
+      <span class="phone">📞 (01) 234 5678</span>
+      <span class="email">✉️ info@fionnmedical.ie</span>
+    </div>
+
+    <div class="nav-tools">
+      <button class="search-btn">&#128269;</button>
+      <a href="#demo" class="demo-btn">Book a demo</a>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input" />
+    </div>
+
       </div>
     </div>
   </header>
   
-  <!-- CSS -->
-  <style>
-  /* Reset basics */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  /* Logo */
-  .logo img {
-    height: 40px;
-    width: auto;
-  }
-  
-  /* Nav Links */
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #111;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #5c2de3;
-  }
-  
-  /* Icons and Button */
-  .nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .search-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #5c2de3;
-  }
-  
-  .demo-btn {
-    background-color: #5c2de3;
-    color: #fff;
-    padding: 10px 18px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .demo-btn:hover {
-    background-color: #4a21c5;
-  }
-  </style>
+
+
+
 <!-- Sliding Banner -->
 <div id="slidingScreen" class="sliding-screen">
   <div class="slide-content">
-    <h1>Your Health, Our Priority</h1>
+    <h1>Your Health, Our Priority.</h1>
     <p class="hours-text">Open Mon–Fri: 9am–5:30pm | Sat: 9am–5pm | Sun: 10am–4pm</p>
     <a href="#services" class="services-button banner-button">Our Services</a>
   </div>
@@ -141,30 +78,34 @@
 
 <!-- About -->
 <section id="about" class="w3-container w3-padding-32">
-  <div class="about-wrapper">
-    <h2 class="section-heading">ABOUT US</h2>
-    <hr class="section-divider">
+    <!-- <h2 class="section-heading">ABOUT US</h2> -->
 
-    <div class="about-content fade-slide-target">
-      <div class="about-text fade-slide-in">
-        <p>Fionn Medical Centre is dedicated to providing top-quality healthcare services with a patient-centered approach. We are committed to ensuring our patients receive compassionate and effective care at every step.</p>
-        <ul class="tick-list">
+
+<section class="about-section">
+  <div class="about-container">
+    <!-- Left side: Text -->
+    <div class="about-left">
+      <div class="subheading">Since 2003</div>
+      <h2 class="main-heading">ABOUT US</h2>
+      <p class="about-description">
+        Fionn Medical Centre is dedicated to providing top-quality healthcare services with a patient-centered approach.
+        Our commitment to continuous improvement ensures that we meet the evolving needs of our community with care,
+        compassion, and excellence.
+      </p>
+              <ul class="tick-list">
           <li><i class="fa fa-check w3-text-teal"></i> Experienced and compassionate medical professionals</li>
           <li><i class="fa fa-check w3-text-teal"></i> Modern facilities with advanced medical equipment</li>
           <li><i class="fa fa-check w3-text-teal"></i> Wide range of services including general care and specialist consultations</li>
           <li><i class="fa fa-check w3-text-teal"></i> Accessible, welcoming, and inclusive environment</li>
         </ul>
-        <p class="quote-text">"Compassionate care is the cornerstone of better health."</p>
+    </div>
 
-      </div>
-      <div class="about-image fade-slide-in">
-        <img src="images/image7.JPG" alt="About Fionn Medical Centre">
-      </div>
+    <!-- Right side: Image -->
+    <div class="about-right">
+      <img src="images/image7.JPG" alt="Fionn Medical Centre exterior">
     </div>
   </div>
 </section>
-
-
 
 
 
@@ -175,63 +116,63 @@
     <hr class="section-divider" />
     <span class="sub-bar">Professional. Preventative. Personalised.</span>
 
-    <div class="services-grid">
+<div class="services-grid">
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-user-md"></i></div>
-        <h3>GP Consultations</h3>
-        <p>Routine and acute assessments for every stage of life.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-stethoscope"></i></div>
+    <h3>GP Consultations</h3>
+    <p>Routine and acute assessments for every stage of life.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-flask"></i></div>
-        <h3>Lab Investigations</h3>
-        <p>Comprehensive diagnostics to support informed treatment.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-vials"></i></div>
+    <h3>Lab Investigations</h3>
+    <p>Comprehensive diagnostics to support informed treatment.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-heart"></i></div>
-        <h3>Family Planning & Antenatal</h3>
-        <p>Guidance through fertility, pregnancy, and maternal care.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-baby"></i></div>
+    <h3>Family Planning & Antenatal</h3>
+    <p>Guidance through fertility, pregnancy, and maternal care.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-syringe"></i></div>
-        <h3>Immunizations</h3>
-        <p>Childhood vaccines and adult travel or seasonal protection.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-syringe"></i></div>
+    <h3>Immunizations</h3>
+    <p>Childhood vaccines and adult travel or seasonal protection.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-child"></i></div>
-        <h3>Child & Teen Health</h3>
-        <p>Support through key development years with tailored care.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-child"></i></div>
+    <h3>Child & Teen Health</h3>
+    <p>Support through key development years with tailored care.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-globe-medal"></i></div>
-        <h3>Travel & Global Health</h3>
-        <p>Essential vaccinations and advice for international wellbeing.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-plane-departure"></i></div>
+    <h3>Travel & Global Health</h3>
+    <p>Essential vaccinations and advice for international wellbeing.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-mars"></i></div>
-        <h3>Men’s & Women’s Health</h3>
-        <p>Confidential, respectful services for gender-specific care.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-venus-mars"></i></div>
+    <h3>Men’s & Women’s Health</h3>
+    <p>Confidential, respectful services for gender-specific care.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-briefcase-medical"></i></div>
-        <h3>Occupational Medicine</h3>
-        <p>Workplace wellness assessments and return-to-work plans.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+    <h3>Occupational Medicine</h3>
+    <p>Workplace wellness assessments and return-to-work plans.</p>
+  </div>
 
-      <div class="service-card fade-up">
-        <div class="icon-box"><i class="fa fa-band-aid"></i></div>
-        <h3>Minor Surgery & Cryotherapy</h3>
-        <p>Efficient in-house treatment for minor procedures.</p>
-      </div>
+  <div class="service-card fade-up">
+    <div class="icon-box"><i class="fas fa-procedures"></i></div>
+    <h3>Minor Surgery & Cryotherapy</h3>
+    <p>Efficient in-house treatment for minor procedures.</p>
+  </div>
 
-    </div>
+</div>
   </div>
 </section>
 
@@ -246,7 +187,7 @@
     background-image: url('images/healthimage2.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
+    opacity: 0.25;
     position: absolute;
     top: 0; left: 0;
     width: 100%;
@@ -319,171 +260,83 @@
 
 
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p><strong>Location:</strong> Tullamore, Co. Offaly, Ireland</p>
-        <p><strong>Email:</strong> info@offalyvolunteer.ie</p>
-        <p><strong>Phone:</strong> +353 57 932 1234</p>
-      </div>
-      <div class="contact-form">
-        <h2>Get in Touch</h2>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <!-- Contact Details -->
+    <div class="contact-info">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p><strong>Address:</strong> Tullamore, Co. Offaly, Ireland</p>
+      <p><strong>Email:</strong> <a href="mailto:info@offalyvolunteer.ie">info@offalyvolunteer.ie</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+353579321234">+353 57 932 1234</a></p>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-  </section>
-  
-  
 
-  <!-- Footer -->
-  <footer class="w3-container w3-teal w3-center w3-padding-16">
-    <p>&copy; 2025 Fionn Medical Centre. All rights reserved.</p>
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
 
-  </footer>
-  
-  
+  <!-- Map Section -->
+  <div class="map-section">
+    <h3 class="map-heading">Visit Us</h3>
+    <div class="map-container">
+      <!-- Google Map Embed -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.187139193962!2d-7.49652198437862!3d53.273107979968915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dd78a4788c775%3A0x26027c2073ea5ff3!2sTullamore%2C%20Co.%20Offaly!5e0!3m2!1sen!2sie!4v1665390026743!5m2!1sen!2sie"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
 
-<!-- JS -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Sliding screen and fade-in
-    var screen = document.getElementById("slidingScreen");
-    if (screen) screen.classList.add("slide-down");
-    document.body.classList.add("fade-in");
+  <!-- Footer-style Navigation -->
+  <div class="contact-nav-links">
+    <a href="#home">Home</a>
+    <a href="#team">Team</a>
+    <a href="#services">Services</a>
+    <a href="#culture">Culture</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-    const fadeUpItems = document.querySelectorAll(".fade-up");
-    const fadeSlideItems = document.querySelectorAll(".fade-slide-in");
-    const fadeInOnScrollItems = document.querySelectorAll(".fade-in-on-scroll");
-
-    function showOnScroll() {
-      const triggerBottom = window.innerHeight - 100;
-
-      // Fade-up animation
-      fadeUpItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top < triggerBottom && rect.bottom > 0) {
-          item.style.opacity = "1";
-          item.classList.add("animate");
-        } else {
-          item.style.opacity = "0";
-          item.classList.remove("animate");
-        }
-      });
-
-      // Slide-in animation
-      fadeSlideItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top < triggerBottom && rect.bottom > 0) {
-          item.classList.add("visible");
-        } else {
-          item.classList.remove("visible");
-        }
-      });
-
-      // Fade-in-on-scroll (used for background section)
-      fadeInOnScrollItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top < triggerBottom && rect.bottom > 0) {
-          item.classList.add("visible");
-        } else {
-          item.classList.remove("visible");
-        }
-      });
-
-      // Scrolling text bar toggle
-      const scrollText = document.getElementById("scrollText");
-      if (scrollText) {
-        scrollText.style.display = window.scrollY > 100 ? "block" : "none";
-      }
-    }
-
-    // Counter animation
-    const counters = document.querySelectorAll('.counter');
-    const options = { threshold: 0.6 };
-
-    const animateCounter = (counter) => {
-      const target = +counter.getAttribute('data-target');
-      const duration = 2000;
-      let start = 0;
-      const stepTime = Math.max(Math.floor(duration / target), 10);
-
-      const updateCounter = () => {
-        start += Math.ceil(target / (duration / stepTime));
-        if (start < target) {
-          counter.textContent = start;
-          setTimeout(updateCounter, stepTime);
-        } else {
-          counter.textContent = target;
-        }
-      };
-
-      updateCounter();
-    };
-
-    const observer = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    counters.forEach(counter => observer.observe(counter));
-
-    // Additional scroll-based fades
-    const faders = document.querySelectorAll('.fade-in-on-scroll');
-    const appearOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-
-    // Rotating quotes in the scrolling text bar
-    const quoteText = document.getElementById("quoteText");
-    const quotes = [
-      "🌟 Thank you for visiting! Stay tuned for updates. 🌟",
-      "💡 Did you know? We're here to help and support our community.",
-      "🤝 Making a difference, one step at a time.",
-      "📍 Based in Offaly — serving with heart!",
-      "📞 Contact us today and get involved!"
-    ];
-
-    let quoteIndex = 0;
-
-    if (quoteText) {
-      setInterval(() => {
-        quoteIndex = (quoteIndex + 1) % quotes.length;
-        quoteText.textContent = quotes[quoteIndex];
-      }, 6000);
-    }
-
-    // Initial call
-    window.addEventListener("scroll", showOnScroll);
-    showOnScroll();
-  });
-</script>
+  <div class="footer-note">
+    <p>&copy; 2025 Offaly Volunteer Centre. All rights reserved.</p>
+  </div>
+</section>
 
 
 
+<!-- Back to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" title="Back to Top"></button>
+
+<!-- Feedback Widget -->
+<div id="feedbackWidget" class="feedback-widget">
+  <button id="feedbackBtn">Feedback</button>
+  <div id="feedbackPanel" class="feedback-panel">
+    <p>Was this page helpful?</p>
+    <div class="feedback-option-group">
+      <button class="feedback-option" data-response="yes">Yes</button>
+      <button class="feedback-option" data-response="no">No</button>
+    </div>
+    <p id="feedbackMessage" style="display: none;"></p>
+  </div>
+</div>
+
+
+
+  <script src="jscript/script.js"></script>
   
   
   

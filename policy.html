@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <title>Our Policy</title>
@@ -17,14 +15,23 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
   
-  </head>
+  </head> 
 
 
 
 <body class="fade-in w3-light-grey">
+
+  <div id="scrollProgressBar"></div>
+
+<!-- Scroll Timeline Tracker -->
+<div class="scroll-timeline">
+  <div class="scroll-bullet active"></div>
+  <div class="scroll-bullet"></div>
+  <div class="scroll-bullet"></div>
+  <div class="scroll-bullet"></div>
+</div>
+
 
       <!-- Scrolling News Bar -->
   <!-- Navbar Section -->
@@ -32,151 +39,309 @@
   <div class="navbar-container">
     <!-- Logo -->
     <a href="#" class="logo">
-      <img src="images/fionnlogo.jpg" alt="Fionn Logo" />
+      <img src="images/fionnlogonobgwhite.png" alt="Fionn Logo" />
     </a>
 
     <!-- Nav Links -->
     <nav class="nav-links">
       <a href="index.html">HOME</a>
       <a href="team.html">About Us</a>
-      <a href="#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="policy.html">Our Policy</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Right-side Icons -->
-    <div class="nav-icons">
+    <!-- Contact Info Above Buttons -->
+    <div class="contact-nav">
+      <span class="phone">📞 (01) 234 5678</span>
+      <span class="email">✉️ info@fionnmedical.ie</span>
+    </div>
+
+    <!-- Buttons Row -->
+    <div class="nav-tools">
       <button class="search-btn">&#128269;</button>
       <a href="#demo" class="demo-btn">Book a demo</a>
+    </div>
+
+    <!-- Hidden Search Field -->
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input" />
+    </div>
+
     </div>
   </div>
 </header>
 
-<!-- CSS -->
-<style>
-/* Reset basics */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Navbar Styling */
-.navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* Logo */
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
-/* Nav Links */
-.nav-links {
-  display: flex;
-  gap: 30px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #5c2de3;
-}
-
-/* Icons and Button */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-btn {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: #5c2de3;
-}
-
-.demo-btn {
-  background-color: #5c2de3;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.demo-btn:hover {
-  background-color: #4a21c5;
-}
-</style>
-
-
-
-  <!-- Hero Image Section -->
-  <div class="hero-header">
-    <h1><i class="fas fa-user-shield icon"></i> Privacy & Confidentiality</h1>
+<!-- Team Impact Message Section -->
+<section class="impact-section fade-slide-in w3-padding-64 fade-in-on-scroll animated-bg">
+  <div class="impact-wrapper">
+    <h2 class="section-heading w3-text-white">Privacy & Confidentiality at Fionn Medical Centre</h2>
+    <hr class="section-divider" />
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <b>
+        We are committed to safeguarding your data, respecting your privacy, and building trust through transparency.
+      </b>
+    </p>
   </div>
+</section>
 
-  <!-- Policy Content -->
-  <section class="policy-section">
-    <p>Fionn Medical Centre wants to ensure the highest standard of medical care for our patients. We understand that confidentiality is a fundamental principle of medical ethics and is central to the trust between patients and doctors.</p>
 
-    <div class="highlight-box">
-      <p>The privacy practices we adopt are in line with:</p>
-      <ul>
-        <li><i class="fas fa-check-circle icon"></i> Medical Council Guidelines</li>
-        <li><i class="fas fa-check-circle icon"></i> Data Protection Acts</li>
-        <li><i class="fas fa-check-circle icon"></i> ICGP Guide to Data Protection Legislation</li>
-      </ul>
+
+<!-- Statement Section with Background -->
+<section class="statement-hero-section fade-in-on-scroll">
+  <div class="statement-overlay">
+    <div class="statement-hero-content">
+      <h1>Privacy & Confidentiality Statement</h1>
+      <p>
+        <strong>Fionn Medical Centre</strong> is committed to maintaining the highest standard of medical care and patient confidentiality.<br><br>
+        Our privacy practices follow Medical Council guidelines, the Data Protection Acts, and ICGP recommendations.<br><br>
+        <strong>Your consent</strong> is central to how we manage your health information.
+      </p>
+      <a href="#policy-details" class="hero-btn">Learn More</a>
     </div>
+  </div>
+</section>
 
+
+
+<section class="policy-preview w3-center fade-in-on-scroll">
+  <h3 class="w3-text">Policy Highlights</h3>
+  <p class="preview-subtitle">Explore the core principles that guide our privacy and confidentiality practices.</p>
+
+  <div class="preview-cards">
+    <div class="preview-card">
+      <i class="fas fa-shield-alt"></i>
+      <h4>Data Security</h4>
+    </div>
+    <div class="preview-card">
+      <i class="fas fa-user-secret"></i>
+      <h4>Confidentiality</h4>
+    </div>
+    <div class="preview-card">
+      <i class="fas fa-file-alt"></i>
+      <h4>Patient Records</h4>
+    </div>
+    <div class="preview-card">
+      <i class="fas fa-lock"></i>
+      <h4>Access Control</h4>
+    </div>
+    <div class="preview-card">
+      <i class="fas fa-user-shield"></i>
+      <h4>Compliance</h4>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Policy Details Section -->
+<section class="policy-layout">
+  <!-- Sidebar Navigation -->
+  <aside class="policy-sidebar">
+    <ul>
+      <li><a href="#managing-info" class="nav-link active">Managing Your Inforamtion</a></li>
+      <li><a href="#disclosure-with-consent" class="nav-link">Disclosure With Consent</a></li>
+      <li><a href="#disclosure-without-consent" class="nav-link">Disclosure Without Consent</a></li>
+      <li><a href="#request-records" class="nav-link">Request For Records</a></li>
+      <li><a href="#medical-reports" class="nav-link">Medical Reports</a></li>
+      <li><a href="#recordings" class="nav-link">Recordings</a></li>
+      <li><a href="#medical-certificates" class="nav-link">Medical Certificates</a></li>
+      <li><a href="#right-of-access" class="nav-link">Right Of Access</a></li>
+
+    </ul>
+  </aside>
+
+  <!-- Main Policy Content -->
+<article class="policy-content">
+  <section id="managing-info">
     <h2>Managing Your Information</h2>
     <ul>
-      <li>We collect and keep necessary patient information to provide care.</li>
-      <li>We are committed to retaining your data securely and confidentially.</li>
-      <li>We explain any data collected, and ask you to update us with relevant changes.</li>
-      <li>All staff are bound by confidentiality agreements and professional codes.</li>
-      <li>Patient records are only accessed when necessary to carry out specific duties.</li>
-    </ul>
+      <li>We will only ask for and keep information that is necessary. We will attempt to keep it as accurate and up to date as possible. We will explain the need for any information we ask for if a patient is not sure why it is needed.</li>
+      <li>We ask all patients to inform us about any relevant changes that we should know about. This would include such things as any new treatments or investigations being carried out that we are not aware of. Patients are asked to inform us of change of address and phone numbers.</li>
+      <li>All persons in the practice (not already covered by a professional confidentiality code) sign a confidentiality agreement that explicitly makes clear their duties in relation to personal health information and the consequences of breaching that duty.</li>
 
-    <h2>Examples of Staff Accessing Patient Records</h2>
+      <li>Access to patient records is regulated to ensure that they are used only to the extent necessary to enable the employee in question, whether secretary, manager, or healthcare professional perform their tasks for the proper functioning of the practice. In this regard, patients should understand that practice staff may have access to their records for:
+
+              <!-- Dropdown toggle button -->
+      <button class="dropdown-toggle" onclick="toggleDropdown()">Show Details ▼</button>
+
+      <!-- Dropdown content -->
+      <ul id="dropdown-details" class="dropdown-content">
+        <li>Identifying and printing repeat prescriptions for patients. These are then reviewed and signed by the GP.</li>
+        <li>Generating a social welfare certificate for the patient. This is then checked and signed by the GP.</li>
+        <li>Typing referral letters to hospital consultants or allied health professional such as physiotherapists, occupational therapists, psychologists and dieticians.</li>
+        <li>Opening letters from hospitals and consultants. These letters are then reviewed by the doctor and scanned into their electronic patient record.</li>
+        <li>Scanning clinical letters, radiology reports and any other documents not available in electronic format.</li>
+        <li>Downloading laboratory results and Out of Hours Co-op reports and performing integration of these results into the electronic patient record.</li>
+        <li>Photocopying or printing documents for referral to consultants, attending an antenatal clinic or when a patient is changing GP</li>
+        <li>Checking for a patient if a hospital or consultant letter is back or if a laboratory or radiology result is back, in order to schedule a conversation with the GP.</li>
+        <li>Handling, printing, photocopying and postage of medico legal and life assurance reports, and of associated documents.</li>
+      </ul>
+      </li>
+
+      
+    </ul>
+  </section>
+
+  <section id="disclosure-with-consent">
+    <h2>Disclosure With Consent</h2>
     <ul>
-      <li>Printing and preparing repeat prescriptions (approved by GP).</li>
-      <li>Typing referral letters and handling communication with hospitals.</li>
-      <li>Managing results and scanning reports into your record.</li>
-      <li>Checking preventative service needs (e.g., smears, vaccines, check-ups).</li>
-      <li>Handling documents for legal or insurance use under strict procedures.</li>
+      <li>If a patient can make their own decisions about their healthcare, we will get their consent before giving confidential information that identifies them to the patient’s relatives, close friends, or for research or to disease registers.</li>
+      <li>If the patient does not consent to disclosure of identifiable information, we will respect that decision except where failure to make the disclosure would put the patient or others at risk of serious harm or the disclosure is required by law or in the public interest as outline below.</li>
+      <li>Patients should understand and accept that their healthcare information must be shared within the healthcare team and with support staff to provide effective and safe care. If disclosure of a patient’s information within our practice or to other health care providers is necessary as part of a patient’s treatment and care, we will explain this to the patient and disclose the information to an appropriate person making sure they are aware of their duty of confidentiality. If a patient objects to the transfer of the information we deem necessary, we will explain to the patient that we cannot arrange referral or treatment without disclosing the information.</li>
+      <li>We recognise that clinical audit, quality assurance, education and training are essential for providing safe and effective healthcare. If we are providing patient information pursuant to of any of these activities, we understand the information must be anonymised or coded before it is disclosed outside the healthcare team. If that is not possible, we will make sure a patient is told about the disclosure in advance and given the opportunity to object. We will respect a patient’s wishes in respect of the disclosure.</li>
     </ul>
+  </section>
 
-    <p>If you have questions about how your data is handled or want to request access to your health record, please contact our reception team or your GP directly.</p>
+  <section id="disclosure-without-consent">
+    <h2>Disclosure Without Consent</h2>
+    <ul>
+      <li>In certain circumstances we will be required to disclose patient information by law or in the public interest. We will inform the patient in advance of such an intended disclosure, unless this would cause the patient serious harm or would undermine the purposes of the disclosure.</li>
+      <li>We will disclose patient information where required by law, for example, pursuant to a court order or infectious disease notification or if we hold a reasonable belief that a crime involving a sexual assault or other violence has been committed against a child or other vulnerable person.   We may make a disclosure in the public interest to protect a patient, other identifiable people or the wider community. Before making such a disclosure the practice will be satisfied that the possible harm the disclosure may cause to the patient is outweighed by the benefits that are likely to arise for the patient or others. The disclosure will be limited to the minimum information and minimum number of people necessary.</li>
+      <li>If a patient lacks capacity to give consent and is unlikely to regain capacity, we may consider making a disclosure only if it is in the best interests of the patient.</li>
+      <li>As a rule, where possible we will always tell the patient in advance that we are disclosing information without the patient’s consent and why the GP is doing so, unless to do so would put the patient or third party at risk of serious harm.</li>
+
+
+    </ul>
+  </section>
+
+  <section id="request-records">
+    <h2>Request for records from a patient or third party before and after death of a patient.</h2>
+    <ul>
+      <li>If the practice receives a request from a patient to release a copy of a patient’s records, we will consider carefully the obligation to remove all references to third parties.</li>
+      <li>In the case of requests for disclosures to insurance companies or requests made by solicitors for a patient’s records we will only release the information with the patient’s signed consent.</li>
+      <li>We are aware that patient information remains confidential even after death. If it is not clear if a patient consented to the disclosure of information after death, we would consider how the disclosure might benefit or cause distress to the family or carers, the effect of disclosure on the reputation of the deceased and the purpose of disclosure. We will require written consent to disclosure of a deceased’s patient’s records from the personal representative or executor of the deceased’s will. We are aware that a GP’s discretion may be limited if a disclosure of a patient’s records is required by law.</li>
+    </ul>
+  </section>
+
+  <section id="medical-reports">
+    <h2>Medical Reports</h2>
+    <ul>
+      <li>We will only prepare a medical report on a patient with a patient’s consent.</li>
+      <li>A report will be specific to the episode for which the report has been requested.</li>
+      <li>We understand that a medical report requested by a third party such as an employer, insurance company or legal representative must be factual, accurate and not misleading.</li>
+      <li>We will seek to ensure that the patient understands the scope and purpose of the report and that the GP cannot omit relevant information.</li>
+      <li>We will also seek to ensure the patient is aware of our duty of care to them and to the person/company from whom the report was requested.</li>
+    </ul>
   </section>
 
 
+  <section id="recordings">
+    <h2>Recordings</h2>
+    <ul>
+      <li>It should be noted that we do not, as a rule, make or allow to be made, recordings of any kind during a consultation with our GPs.</li>
+      <li>However  in very rare occasions we may have trainees and students doing their rotation in our practice these students and trainees may benefit from recording a consultation and having it reviewed later. If any such recording was to take place – we are committed to ensuring that any audio, visual or photographic recordings of a patient or relative of a patient, in which the person is identifiable, should only be made with express consent of that person. The recordings will be kept confidential as a part of the patient’s record. </li>
+      <li>We will do all we reasonably can to protect confidentiality of the recording. We will get consent before sharing such videos, photos or other images of a patient. The recordings will be deleted after 14 days.</li>
+      <li>We will only take images of patients on a GP’s personal mobile device when necessary for the patient’s care. Such images will not identify a patient and shall only be kept for the minimum time necessary.</li> 
+    </ul>
+  </section>
+
+  
+  <section id="medical-certificates">
+    <h2>Medical Certificates</h2>
+    <ul>
+      <li>In general, work-related Medical Certificates from a GP will only provide a confirmation that a patient is unfit for work with an indication of when the patient will be fit to resume work. Where it is considered necessary to provide additional information, we will discuss that with the patient. However, Social Welfare Certificates of Incapacity for work must include the medical reason the patient is unfit to work.</li>
+    </ul>
+  </section>
+
+    
+  <section id="right-of-access">
+    <h2>Your right of access to your health information</h2>
+    <ul>
+      <li>You have the right of access to all the personal information held about you by this practice. If you wish to see your records in most cases it is the quickest to discuss this with your doctor who will outline the information in the record with you. You can make a formal written access request to the practice and the matter can be dealt with formally.</li>
+    </ul>
+  </section>
+
+  
+</article>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <!-- Contact Details -->
+    <div class="contact-info">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p><strong>Address:</strong> Tullamore, Co. Offaly, Ireland</p>
+      <p><strong>Email:</strong> <a href="mailto:info@offalyvolunteer.ie">info@offalyvolunteer.ie</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+353579321234">+353 57 932 1234</a></p>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="map-section">
+    <h3 class="map-heading">Visit Us</h3>
+    <div class="map-container">
+      <!-- Google Map Embed -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.187139193962!2d-7.49652198437862!3d53.273107979968915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dd78a4788c775%3A0x26027c2073ea5ff3!2sTullamore%2C%20Co.%20Offaly!5e0!3m2!1sen!2sie!4v1665390026743!5m2!1sen!2sie"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Footer-style Navigation -->
+  <div class="contact-nav-links">
+    <a href="#home">Home</a>
+    <a href="#team">Team</a>
+    <a href="#services">Services</a>
+    <a href="#culture">Culture</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="footer-note">
+    <p>&copy; 2025 Offaly Volunteer Centre. All rights reserved.</p>
+  </div>
+</section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="w3-container w3-teal w3-center w3-padding-16">
+    <p>&copy; 2025 Fionn Medical Centre. All rights reserved.</p>
+
+  </footer>
+
+
+<!-- Back to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" title="Back to Top">↑</button>
+
+<!-- Feedback Widget -->
+<div id="feedbackWidget" class="feedback-widget">
+  <button id="feedbackBtn">Feedback</button>
+  <div id="feedbackPanel" class="feedback-panel">
+    <p>Was this page helpful?</p>
+    <div class="feedback-option-group">
+      <button class="feedback-option" data-response="yes">Yes</button>
+      <button class="feedback-option" data-response="no">No</button>
+    </div>
+    <p id="feedbackMessage" style="display: none;"></p>
+  </div>
+</div>
+
+
+
+<script src="jscript/script.js"></script>
 
 
 </body>

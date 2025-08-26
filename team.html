@@ -26,116 +26,47 @@
 
 <body class="fade-in w3-light-grey">
 
+<div id="scrollProgressBar"></div>
+
+
       <!-- Scrolling News Bar -->
   <!-- Navbar Section -->
 <header class="navbar">
   <div class="navbar-container">
     <!-- Logo -->
     <a href="#" class="logo">
-      <img src="images/fionnlogo.jpg" alt="Fionn Logo" />
+      <img src="images/fionnlogonobgwhite.png" alt="Fionn Logo" />
     </a>
 
     <!-- Nav Links -->
     <nav class="nav-links">
       <a href="index.html">HOME</a>
       <a href="team.html">About Us</a>
-      <a href="#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="policy.html">Our Policy</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Right-side Icons -->
-    <div class="nav-icons">
+    <!-- Contact Info Above Buttons -->
+    <div class="contact-nav">
+      <span class="phone">📞 (01) 234 5678</span>
+      <span class="email">✉️ info@fionnmedical.ie</span>
+    </div>
+
+    <!-- Buttons Row -->
+    <div class="nav-tools">
       <button class="search-btn">&#128269;</button>
       <a href="#demo" class="demo-btn">Book a demo</a>
     </div>
+
+    <!-- Hidden Search Field -->
+    <div class="search-container">
+      <input type="text" placeholder="Search..." class="search-input" />
+    </div>
+
+    </div>
   </div>
 </header>
-
-<!-- CSS -->
-<style>
-/* Reset basics */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Navbar Styling */
-.navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* Logo */
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
-/* Nav Links */
-.nav-links {
-  display: flex;
-  gap: 30px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #5c2de3;
-}
-
-/* Icons and Button */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-btn {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: #5c2de3;
-}
-
-.demo-btn {
-  background-color: #5c2de3;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.demo-btn:hover {
-  background-color: #4a21c5;
-}
-</style>
-
-
 
 
 <!-- Team Impact Message Section -->
@@ -165,13 +96,14 @@
         <strong>Metrics We Monitor:</strong> We prioritize transparency and continuous improvement. We actively monitor metrics such as patient satisfaction, volunteer engagement, service delivery speed, and IT system reliability.
         <br /><br />
         <strong>Partnerships:</strong> We proudly collaborate with local health services, nonprofit organizations, digital platform developers, and volunteer networks. These partnerships allow us to extend our reach and bring innovative solutions to the communities we serve.
+ 
       </p>
     </div>
 
     <!-- Image + Branding -->
     <div class="culture-brand">
       <span class="culture-watermark">Fionn</span>
-      <img src="images/healthimage2.jpg" alt="Culture at Work" />
+      <img src="images/healthimage2square.jpg" alt="Culture at Work" />
     </div>
   </div>
 </section>
@@ -181,7 +113,7 @@
 <!-- Original Team Grid (Descriptions Removed) -->
 <section class="team-section">
   <div class="about-wrapper">
-    <h2 class="section-heading">Meet the Team</h2>
+    <h2 class="team-heading">Meet the Team</h2>
     <hr class="section-divider">
 
     <div class="team-grid">
@@ -210,54 +142,110 @@
 </section>
 
 
-<!-- New Vertical Cards with Descriptions -->
-<section class="team-section vertical-team-modern" style="background-color: #f0f0f0; padding: 80px 0;">
-  <div class="about-wrapper">
-    <h2 class="section-heading">Our Team in Detail</h2>
-    <hr class="section-divider">
 
-    <!-- Jane Doe -->
-    <div class="modern-card fade-in-on-scroll">
-      <img src="images/profile.jpg" alt="Luke Thebe" class="modern-image" />
-      <div class="modern-text">
-        <h3><i class="fas fa-user-tie icon-role"></i> Luke Thebe</h3>
+
+<section class="feature-profile fade-in-on-scroll">
+  <div class="container">
+    <div class="profile-row">
+      <div class="profile-image">
+        <img src="images/profile.JPG" alt="Christine McCarthy">
+      </div>
+      <div class="profile-content">
+        <h2>Luke Thebe</h2>
         <p class="role">Coordinator</p>
-        <p>Jane leads our initiatives with dedication and creativity, focusing on strategic partnerships and ensuring our services align with community needs. With over a decade of experience in nonprofit leadership, she brings vision and empathy to the team.</p>
+        <p class="description">
+          Luke leads our initiatives with dedication and creativity, focusing on strategic partnerships and ensuring our services align with community needs. With over a decade of experience in nonprofit leadership, he brings vision and empathy to the team.
+        </p>
+
+
+        <a class="cta-link feature-toggle-btn">Learn More</a>
+          <div class="profile-contact-info" style="display:none;">
+            <p>Email: <a href="mailto:example@fionn.ie">luke@fionnmedical.ie</a></p>
+            <p>Phone: (01) 234 5678</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/christine-mccarthy" target="_blank">View Profile</a></p>
+          </div>
+          
       </div>
     </div>
-
-    <!-- John Smith -->
-    <div class="modern-card fade-in-on-scroll">
-      <img src="images/image7.JPG" alt="John Smith" class="modern-image" />
-      <div class="modern-text">
-        <h3><i class="fas fa-hands-helping icon-role"></i> John Smith</h3>
-        <p class="role">Volunteer Manager</p>
-        <p>John is the heart of our volunteer program, supporting recruitment, training, and ongoing engagement. He builds strong relationships with volunteers and coordinates efforts to maximize impact across all initiatives.</p>
-      </div>
-    </div>
-
-    <!-- Aisha Rahman -->
-    <div class="modern-card fade-in-on-scroll">
-      <img src="images/team3.jpg" alt="Aisha Rahman" class="modern-image" />
-      <div class="modern-text">
-        <h3><i class="fas fa-bullhorn icon-role"></i> Aisha Rahman</h3>
-        <p class="role">Communications Lead</p>
-        <p>Aisha crafts our message with clarity and purpose. From social media campaigns to community newsletters, she ensures our mission is heard, understood, and supported by a broad and diverse audience.</p>
-      </div>
-    </div>
-
-    <!-- Liam O'Brien -->
-    <div class="modern-card fade-in-on-scroll">
-      <img src="images/team4.jpg" alt="Liam O'Brien" class="modern-image" />
-      <div class="modern-text">
-        <h3><i class="fas fa-laptop-code icon-role"></i> Liam O'Brien</h3>
-        <p class="role">IT Support</p>
-        <p>Liam oversees our technical operations, maintaining our digital platforms and providing tech support for team members and volunteers. His proactive approach helps ensure everything runs efficiently and securely.</p>
-      </div>
-    </div>
-
   </div>
 </section>
+
+<section class="feature-profile fade-in-on-scroll">
+  <div class="container">
+    <div class="profile-row reverse">
+      <div class="profile-image">
+        <img src="images/stephanie.JPG" alt="Christine McCarthy">
+      </div>
+      <div class="profile-content">
+        <h2>Stephanie McCarthy</h2>
+        <p class="role">Admin Staff</p>
+        <p class="description">
+          Stephanie plays a key role in keeping our practice running smoothly. She manages day-to-day administrative operations, handles patient communications, and ensures appointments and documentation are efficiently organized. Her attention to detail and warm professionalism help create a welcoming and seamless experience for every visitor.        
+        </p>
+        <a class="cta-link feature-toggle-btn">Learn More</a>
+          <div class="profile-contact-info" style="display:none;">
+            <p>Email: <a href="mailto:example@fionn.ie">stephanie@fionnmedical.ie</a></p>
+            <p>Phone: (01) 234 5678</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/christine-mccarthy" target="_blank">View Profile</a></p>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="feature-profile fade-in-on-scroll">
+  <div class="container">
+    <div class="profile-row">
+      <div class="profile-image">
+        <img src="images/christine.JPG" alt="Christine McCarthy">
+      </div>
+      <div class="profile-content">
+        <h2>Christine McCarthy</h2>
+        <p class="role">Practice Manager</p>
+        <p class="description">
+          Christine leads the coordination of our clinic’s operations and staff. From overseeing patient services to managing compliance and scheduling, she ensures the clinic functions effectively. Her leadership and dedication to high-quality care help maintain the trusted reputation of Fionn Medical Centre.
+        </p>
+        <a class="cta-link feature-toggle-btn">Learn More</a>
+          <div class="profile-contact-info" style="display:none;">
+            <p>Email: <a href="mailto:example@fionn.ie">christine@fionnmedical.ie</a></p>
+            <p>Phone: (01) 234 5678</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/christine-mccarthy" target="_blank">View Profile</a></p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="feature-profile alt fade-in-on-scroll">
+  <div class="container">
+    <div class="profile-row reverse">
+      <!-- Image Right -->
+      <div class="profile-image">
+        <img src="images/team4.jpg" alt="Liam O'Brien">
+      </div>
+      <div class="profile-content">
+        <h2>Liam O'Brien</h2>
+        <p class="role">IT Support</p>
+        <p class="description">
+          Liam oversees our technical operations, maintaining our digital platforms and providing tech support for team members and volunteers. His proactive approach helps ensure everything runs efficiently and securely.
+        </p>
+        <a href="#" class="cta-link">
+          <span>Learn more about Liam</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 <!-- Team Values Section -->
@@ -351,68 +339,27 @@
 
 
 
+<!-- Back to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" title="Back to Top"></button>
+
+<!-- Feedback Widget -->
+<div id="feedbackWidget" class="feedback-widget">
+  <button id="feedbackBtn">Feedback</button>
+  <div id="feedbackPanel" class="feedback-panel">
+    <p>Was this page helpful?</p>
+    <div class="feedback-option-group">
+      <button class="feedback-option" data-response="yes">Yes</button>
+      <button class="feedback-option" data-response="no">No</button>
+    </div>
+    <p id="feedbackMessage" style="display: none;"></p>
+  </div>
+</div>
+
   
 
+<script src="jscript/script.js"></script>
 
-  
 
-
-  <script>
-    // Reveal animations on scroll
-    const faders = document.querySelectorAll('.fade-in-on-scroll');
-    
-
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2
-    });
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-
-    const counters = document.querySelectorAll('.counter');
-  const speed = 200; // lower = faster
-
-  const animateCounters = () => {
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-
-        const increment = target / speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-
-      updateCount();
-    });
-  };
-
-  // Animate on scroll into view
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounters();
-        observer.disconnect();
-      }
-    });
-  });
-
-  const section = document.querySelector('.impact-section');
-  if (section) observer.observe(section);
-  </script>
 
 </body>
 </html>
