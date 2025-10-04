@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  
 
   // ========================== FEATURES SECTION FADE-IN ==========================
 const featureCards = document.querySelectorAll('.feature-card');
@@ -250,9 +251,17 @@ fadeInElements.forEach(el => fadeInObserver.observe(el));
   });
 
 
-
-
+  // ========================== NOTIFICATION BAR DISMISS ==========================
+const notificationBar = document.getElementById("notificationBar");
+if (notificationBar) {
+  const closeBtn = notificationBar.querySelector(".close-btn");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      notificationBar.style.opacity = "0";
+      notificationBar.style.transition = "opacity 0.6s ease";
+      setTimeout(() => notificationBar.style.display = "none", 600);
+    });
+  }
+}
 
 });
-
-

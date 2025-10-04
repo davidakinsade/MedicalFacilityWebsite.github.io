@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Our Policy</title>
+    <title>Services - Fionn Medical Centre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- External Libraries -->
@@ -12,7 +12,6 @@
     <!-- Add to the <head> of your HTML -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
@@ -33,16 +32,27 @@
 </div>
 
 
+
+
+<div class="notification-bar" id="notificationBar">
+  <p>We have now started accepting new patients. Stay tuned for updates.</p>
+  <button class="close-btn" onclick="dismissNotification()">✖</button>
+</div>
+
+
+
+
       <!-- Scrolling News Bar -->
-  <!-- Navbar Section -->
+<!-- Navbar Section -->
 <header class="navbar">
   <div class="navbar-container">
-    <!-- Logo -->
+
     <a href="#" class="logo">
       <img src="images/fionnlogonobgwhite.png" alt="Fionn Logo" />
     </a>
 
-    <!-- Nav Links -->
+    <button class="hamburger">☰</button>
+
     <nav class="nav-links">
       <a href="index.html">HOME</a>
       <a href="team.html">About Us</a>
@@ -51,26 +61,24 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Contact Info Above Buttons -->
     <div class="contact-nav">
-      <span class="phone">📞 (01) 234 5678</span>
-      <span class="email">✉️ info@fionnmedical.ie</span>
+      <span class="phone w3-text-white">📞 +353 57 932 7753</span>
+      <span class="email w3-text-white">✉️ gp@fionnmedical.com</span>
     </div>
 
-    <!-- Buttons Row -->
     <div class="nav-tools">
       <button class="search-btn">&#128269;</button>
-      <a href="#demo" class="demo-btn">Book a demo</a>
+      <a href="#contact" class="demo-btn">Book a demo</a>
     </div>
 
-    <!-- Hidden Search Field -->
     <div class="search-container">
       <input type="text" placeholder="Search..." class="search-input" />
     </div>
 
-    </div>
-  </div>
+  </div> <!-- Correct: only one closing div -->
 </header>
+
+
 
 
 <!-- Team Impact Message Section -->
@@ -194,7 +202,7 @@
 
     <div class="pricing-card">
       <h3>Drivers Medical Report</h3>
-      <p class="price">€60</p>
+      <p class="price">€70</p>
       <ul>
         <li>Certified GP assessment</li>
         <li>Paperwork completion</li>
@@ -204,7 +212,7 @@
 
     <div class="pricing-card">
       <h3>Housecalls</h3>
-      <p class="price">€80</p>
+      <p class="price">€100</p>
       <ul>
         <li>GP visit at home</li>
         <li>Emergency/urgent care</li>
@@ -229,6 +237,12 @@
       </ul>
     </div>
 
+
+
+    <div class="future-patients-message">
+  <p><strong>Note:</strong> Fionn Medical Centre has now started accepting new patients. Please check back regularly for updates.</p>
+</div>
+
   </div>
 </section>
 
@@ -244,37 +258,31 @@
 
   <div class="features-grid">
     <div class="feature-card">
-      <img src="svg/appointment.svg" alt="Flexible Appointments" />
+      <div class="feature-icon">📅</div>
       <h3>Flexible Appointments</h3>
       <p>We offer morning, evening, and weekend slots to suit your schedule.</p>
     </div>
 
     <div class="feature-card">
-      <img src="svg/experienced-doctors.svg" alt="Experienced Team" />
+      <div class="feature-icon">👩‍⚕️</div>
       <h3>Experienced Team</h3>
-      <p>Our trusted doctors and staff bring years of expertise to your care.</p>
+      <p>Our trusted staff bring years of expertise to your care.</p>
     </div>
 
     <div class="feature-card">
-      <img src="svg/family-care.svg" alt="Family-Friendly" />
+      <div class="feature-icon">👨‍👩‍👧‍👦</div>
       <h3>Family-Friendly</h3>
       <p>Comfortable spaces and gentle care for patients of all ages.</p>
     </div>
 
     <div class="feature-card">
-      <img src="svg/online-booking.svg" alt="Online Booking" />
-      <h3>Easy Online Booking</h3>
-      <p>Book your appointment in just a few clicks from your phone or computer.</p>
-    </div>
-
-    <div class="feature-card">
-      <img src="svg/confidentiality.svg" alt="Data Confidentiality" />
+      <div class="feature-icon">🔒</div>
       <h3>Data Confidentiality</h3>
       <p>Your information is always kept private, secure, and handled with care.</p>
     </div>
 
     <div class="feature-card">
-      <img src="svg/support.svg" alt="Supportive Staff" />
+      <div class="feature-icon">🤝</div>
       <h3>Supportive Staff</h3>
       <p>Our friendly team is here to guide and support you every step of the way.</p>
     </div>
@@ -284,63 +292,62 @@
 
 
 
-
-
-
-
-
-
-
-
 <!-- Contact Section -->
-<section class="contact" id="contact">
-  <div class="contact-container">
-
-    <!-- Contact Details -->
+<section class="contact-section fade-in-on-scroll" id="contact">
+  <div class="contact-wrapper">
+    <!-- Left Column: Contact Info -->
     <div class="contact-info">
-      <h2 class="contact-heading">Contact Us</h2>
-      <p><strong>Address:</strong> Tullamore, Co. Offaly, Ireland</p>
-      <p><strong>Email:</strong> <a href="mailto:info@offalyvolunteer.ie">info@offalyvolunteer.ie</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+353579321234">+353 57 932 1234</a></p>
+      <h2 class="contact-heading"><strong>Contact Us</strong></h2>
+      <p><strong>Address:</strong><br>6 Fionn Tir, Market Square Tullamore, Co. Offaly, R35 E0Y0</p>
+      <p><strong>Email:</strong><br> <a href="mailto:gp@fionnmedical.com">gp@fionnmedical.com</a></p>
+      <p><strong>Phone:</strong><br> <a href="tel:+353579327753">+353 57 932 7753</a></p>
 
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <div class="opening-hours">
+        <h3><strong>Opening Hours</strong></h3>
+        <ul>
+          <li><strong>Monday–Friday:</strong> 9:30 AM – 12:30 PM & 2:00 PM - 5:00 PM</li>
+          <li><strong>Wednesday:</strong> 9:00 AM – 1:00 PM</li>
+          <li><strong>Saturday & Sunday:</strong> Closed</li>
+        </ul>
       </div>
     </div>
 
-    <!-- Contact Form -->
+    <!-- Right Column: Contact Form -->
     <div class="contact-form">
-      <h2 class="contact-heading">Get in Touch</h2>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <h2 class="contact-heading"><strong>Get in Touch</strong></h2>
+
+        <form action="https://formsubmit.co/davidakinsadee@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+          <button type="submit"><strong>Send Message</strong></button>
+        </form>
+
     </div>
   </div>
 
-  <!-- Map Section -->
-  <div class="map-section">
-    <h3 class="map-heading">Visit Us</h3>
-    <div class="map-container">
-      <!-- Google Map Embed -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.187139193962!2d-7.49652198437862!3d53.273107979968915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dd78a4788c775%3A0x26027c2073ea5ff3!2sTullamore%2C%20Co.%20Offaly!5e0!3m2!1sen!2sie!4v1665390026743!5m2!1sen!2sie"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+<!-- Map Section -->
+<div class="map-section">
+  <h3 class="map-heading"><strong>Visit Us</strong></h3>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.187139193962!2d-7.492000!3d53.273000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dd78a4788c775%3A0x26027c2073ea5ff3!2s6%20Fionn%20Tir%2C%20Market%20Square%2C%20Tullamore%2C%20Co.%20Offaly%2C%20R35%20E0Y0!5e0!3m2!1sen!2sie!4v1696080000000!5m2!1sen!2sie"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
+</div>
 
   <!-- Footer-style Navigation -->
   <div class="contact-nav-links">
-    <a href="#home">Home</a>
-    <a href="#team">Team</a>
-    <a href="#services">Services</a>
-    <a href="#culture">Culture</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="team.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="policy.html">Our Policy</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <div class="footer-note">
@@ -351,7 +358,7 @@
 
 
 <!-- Back to Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn" title="Back to Top">↑</button>
+<button id="scrollTopBtn" class="scroll-top-btn" title="Back to Top"></button>
 
 <!-- Feedback Widget -->
 <div id="feedbackWidget" class="feedback-widget">
@@ -369,6 +376,26 @@
 
 
 <script src="jscript/script.js"></script>
+
+
+  <!-- for navbar - mobile version -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    console.log("Hamburger:", hamburger);
+    console.log("Nav Links:", navLinks);
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    } else {
+      console.warn("Hamburger or navLinks not found.");
+    }
+  });
+</script>
 
 
 </body>
